@@ -1,8 +1,7 @@
 const placeHolderMessage = document.querySelector(".place-holder-message");
 const searchForm = document.getElementById("search-form");
 const booksDisplay = document.getElementById("books-display");
-const defaultBookImage =
-  "https://www.flaticon.com/svg/vstatic/svg/879/879891.svg?token=exp=1610492090~hmac=5ea365a887b3732e935d0ff29cd15eaf";
+const defaultBookImage = "./img/—Pngtree—book icon_3728063.png";
 const googleBooksURL = "https://www.googleapis.com/books/v1/volumes?q=";
 let apiKey = "&key=AIzaSyCw6aeDwd2srAlaiVBFSSBvyl2O7atCTaA";
 
