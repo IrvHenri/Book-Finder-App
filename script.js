@@ -1,7 +1,7 @@
 const placeHolderMessage = document.querySelector(".place-holder-message");
 const searchForm = document.getElementById("search-form");
 const booksDisplay = document.getElementById("books-display");
-const defaultBookImage = "./img/—Pngtree—book icon_3728063.png";
+const defaultBookImage = "./img/book.png";
 const googleBooksURL = "https://www.googleapis.com/books/v1/volumes?q=";
 let apiKey = "&key=AIzaSyCw6aeDwd2srAlaiVBFSSBvyl2O7atCTaA";
 
@@ -46,7 +46,7 @@ function displayBooks(books) {
     
     <h3>  ${title} </h3>
     <div class= "book-img">
-     <img src= "${smallThumbnail}" alt= "Image book cover "> 
+     <img  src= "${smallThumbnail}" alt= "Image book cover "> 
      </div>
       <div class = "book-details">
       <small> <strong>Author(s)</strong>: ${authors}</small>
