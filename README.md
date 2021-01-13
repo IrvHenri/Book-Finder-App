@@ -19,6 +19,9 @@ I built it to strengthen my understanding of fetching API data and rendering tha
 - JavaScript
 - Google Books API
 
+## Known Issues
+- Currently not rendering properly on safari desktop and mobile browsers
+
 
 ## License
 MIT © [Irving Henriquez](https://github.com/IrvHenri)
