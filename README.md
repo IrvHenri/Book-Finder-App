@@ -6,7 +6,8 @@ A book finder application which implements the Google Books API to retrieve and 
 See live demo here:
 https://irvhenri.github.io/Book-Finder-App/
 ### Example: Search Result
-![book-finder](https://user-images.githubusercontent.com/69181038/104142700-a4c68d00-538a-11eb-82a5-edd379a8d638.PNG)
+![book-finder](https://user-images.githubusercontent.com/69181038/104399202-2c90d080-551e-11eb-82bc-2d9906b7450c.PNG)
+
 
 ## Motivation
 
