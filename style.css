@@ -22,10 +22,10 @@ h1 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: center;
   padding: 0 0.6em;
-  width: 85%;
+  margin-bottom: 1em;
 }
 
 /* --------------------------- */
@@ -48,15 +48,19 @@ h3 {
 #search-form {
   display: flex;
   width: 100%;
+  max-width: 750px;
   margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
   background: #131921;
   color: #fff;
   padding: 1em;
   border-radius: 5px;
 }
 
-#searchInput {
+#search-input {
   width: 75%;
+
   text-align: center;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -64,6 +68,7 @@ h3 {
 
 #search-btn {
   width: 25%;
+  min-width: 100px;
   text-align: center;
   background: #febd6a;
   cursor: pointer;
@@ -78,13 +83,18 @@ h3 {
 }
 
 #search-btn,
-#searchInput {
+#search-input {
   padding: 1em 2.5em;
   outline: none;
   border: none;
 }
 
-.message-waiting {
+.search-icon {
+  height: 25px;
+  width: 25px;
+  color: black;
+}
+.place-holder-message {
   text-align: center;
   color: #999999;
   margin: 0 auto;
@@ -93,10 +103,11 @@ h3 {
 
 #books-display {
   width: 90%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
   margin: 5rem 0;
-  justify-content: space-between;
+  gap: 2.5em;
+  justify-content: center;
 }
 
 .book-styling {
@@ -104,13 +115,12 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 40%;
-  max-width: 350px;
+  max-width: 300px;
+  min-width: 300px;
   background: #ffffff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin-bottom: 2em;
-  padding: 1.5em 0;
+  padding: 1.8em;
 }
 
 .book-styling:hover {
@@ -121,8 +131,17 @@ h3 {
 .book-img {
   display: flex;
   justify-content: center;
-  width: 50%;
-  padding: 1em 0;
+  width: 80%;
+  overflow: hidden;
+}
+
+.book-img img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: 190px;
+  margin-bottom: 1.2em;
 }
 
 .book-details {
@@ -130,7 +149,8 @@ h3 {
   flex-direction: column;
   align-items: left;
   width: 80%;
-  margin: 0.7em 0;
+  margin-bottom: 1.2em;
+  line-height: 1.2em;
 }
 
 .book-link {
@@ -140,18 +160,15 @@ h3 {
   color: #febd6a;
   padding: 0.6em 1.3em;
   border-radius: 5px;
-  width: 80%;
   transition-duration: 0.3s;
   font-weight: 900;
+  font-size: 0.9em;
+  width: 80%;
 }
 
 .book-link:hover {
   color: #131921;
   background: #febd6a;
-}
-
-small {
-  padding-bottom: 0.5em 0;
 }
 
 footer {

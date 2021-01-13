@@ -16,25 +16,31 @@
       <section id="content">
         <form id="search-form" action="#" onsubmit="return false">
           <input
-            id="searchInput"
-            name="searchInput"
+            id="search-input"
+            name="search-input"
             type="text"
             aria-label="book search input field"
-            placeholder="Type author, book, name, subject..."
+            placeholder="Search by author, book, name, subject..."
             required
           />
-          <button id="search-btn" type="submit">Search</button>
+          <button id="search-btn" type="submit">
+            <img
+              class="search-icon"
+              src="./img/PinClipart.com_free-clipart-icons_4851736.png"
+              alt=""
+            />
+          </button>
         </form>
-        <div class="message-waiting">Waiting to search...</div>
+        <div class="place-holder-message">Waiting to search...</div>
       </section>
       <section id="books-display"></section>
     </div>
     <footer>
       <p>
         Made by
-        <a href="https://github.com/IrvHenri" target="_blank"
-          >Irving Henriquez</a
-        >
+        <a href="https://github.com/IrvHenri" target="_blank">
+          Irving Henriquez
+        </a>
       </p>
     </footer>
   </body>
